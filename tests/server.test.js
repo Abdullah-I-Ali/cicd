@@ -10,9 +10,9 @@ describe('Server Endpoints', () => {
       assert.strictEqual(response.statusCode, 200);
     });
 
-    it('should return "Hello World!"', async () => {
+    it('should return "Hello express!"', async () => {
       const response = await request(app).get('/');
-      assert.strictEqual(response.text, 'Hello World!');
+      assert.strictEqual(response.text, 'Hello express!');
     });
   });
 });
